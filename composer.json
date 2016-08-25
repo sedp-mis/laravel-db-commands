@@ -1,0 +1,22 @@
+{
+    "name": "sedp-mis/laravel-db-commands",
+    "description": "Laravel database commands",
+    "keywords": ["laravel", "db", "database", "command"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arjon Jason Castro",
+            "email": "ajcastro29@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "laravel/framework": "4.2.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "SedpMis\\DbCommands\\": "src"
+        }
+    },
+    "minimum-stability": "stable"
+}
