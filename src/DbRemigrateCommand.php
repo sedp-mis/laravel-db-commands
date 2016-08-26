@@ -15,7 +15,7 @@ class DbRemigrateCommand extends Command
      *
      * @var string
      */
-    protected $name = 'db:remigrate';
+    protected $name = 'remigrate';
 
     /**
      * The console command description.
