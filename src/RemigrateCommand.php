@@ -8,7 +8,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Illuminate\Support\Facades\Config;
 use PDO;
 
-class DbRemigrateCommand extends Command
+class RemigrateCommand extends Command
 {
     /**
      * The console command name.
@@ -22,7 +22,7 @@ class DbRemigrateCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Recreate database and migrate.';
+    protected $description = 'Recreate database and run migrations.';
 
     /**
      * Create a new command instance.
