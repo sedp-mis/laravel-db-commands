@@ -2,8 +2,6 @@
 
 namespace SedpMis\DbCommands;
 
-use Illuminate\Support\Facades\Artisan;
-
 class DbCommandsProvider extends \Illuminate\Support\ServiceProvider
 {
     public function boot()
@@ -12,5 +10,7 @@ class DbCommandsProvider extends \Illuminate\Support\ServiceProvider
         $this->commands('SedpMis\DbCommands\RemigrateCommand');
     }
 
-    public function register() {}
+    public function register()
+    {
+    }
 }

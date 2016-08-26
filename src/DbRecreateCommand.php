@@ -3,10 +3,10 @@
 namespace SedpMis\DbCommands;
 
 use Illuminate\Console\Command;
-use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\Console\Input\InputArgument;
 use Illuminate\Support\Facades\Config;
 use PDO;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputOption;
 
 class DbRecreateCommand extends Command
 {
@@ -50,8 +50,8 @@ class DbRecreateCommand extends Command
 
     public function executeSql($sql)
     {
-        $driver   = Config::get('database.connections.mysql.driver');
-        $host     = Config::get('database.connections.mysql.host');
+        $driver = Config::get('database.connections.mysql.driver');
+        $host = Config::get('database.connections.mysql.host');
         $username = Config::get('database.connections.mysql.username');
         $password = Config::get('database.connections.mysql.password');
 
@@ -78,8 +78,8 @@ class DbRecreateCommand extends Command
      */
     protected function getOptions()
     {
-     return array(
-         array('database', 'd', InputOption::VALUE_REQUIRED, 'Database to recreate.', null),
-     );
+        return [
+         ['database', 'd', InputOption::VALUE_REQUIRED, 'Database to recreate.', null],
+     ];
     }
 }
