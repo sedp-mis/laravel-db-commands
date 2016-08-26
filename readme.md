@@ -17,5 +17,5 @@ composer require sedp-mis/laravel-db-commands:dev-master
 
 ### Available Commands
 
-`db:recreate`
-`db:remigrate`
+- `db:recreate`
+- `db:remigrate`
