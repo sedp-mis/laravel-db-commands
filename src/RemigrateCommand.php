@@ -3,10 +3,8 @@
 namespace SedpMis\DbCommands;
 
 use Illuminate\Console\Command;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use Illuminate\Support\Facades\Config;
-use PDO;
+use Symfony\Component\Console\Input\InputOption;
 
 class RemigrateCommand extends Command
 {
@@ -68,8 +66,8 @@ class RemigrateCommand extends Command
      */
     protected function getOptions()
     {
-     return array(
-        array('seed', 's', InputOption::VALUE_NONE, 'Seed database.'),
-     );
+        return [
+        ['seed', 's', InputOption::VALUE_NONE, 'Seed database.'],
+     ];
     }
 }
